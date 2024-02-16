@@ -1,0 +1,247 @@
+:root {
+  --primary-color: #fff;
+  --brand-color: #fd9222;
+  --black-color: #111;
+  --subscribe-hover: #fcf1e0;
+  --footer-color: #1e1823;
+  --text-font-family: "Montserrat", sans-serif;
+  --padding-vertical-global: 32px;
+  --padding-horizontal-global: 20px;
+  --padding-vertical-global-tablet-desktop: 50px;
+  --padding-horizontal-global-tablet-desktop: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* // .contacts-global {
+//   gap: 543px;
+// } */
+
+.footer-content {
+  background-color: var(--footer-color);
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+  max-width: 1200px;
+  /* // height: 270px; */
+}
+
+/* // .footer-container {
+//   display: flex;
+//   margin: 0;
+// } */
+
+.contacts-icons {
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.footer-title {
+  color: var(--primary-color);
+  font-family: var(--text-font-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.48px;
+  margin-bottom: 32px;
+  /* // margin: 0; */
+  max-width: 300px;
+  /* // margin-right: 543px; */
+}
+
+.footer-title-color {
+  color: var(--brand-color);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 63px;
+  gap: 14px;
+}
+
+.contacts-title {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128.571%;
+  margin: 0;
+}
+.footer-contact {
+  gap: 4px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-link {
+  color: var(--primary-color);
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover {
+  color: var(--brand-color);
+}
+
+.footer-icons {
+  margin: 0;
+}
+
+.list-icons {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-icon-insta {
+  fill: var(--primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-icon-insta:hover {
+  fill: var(--brand-color);
+}
+
+.svg-icon-insta:focus {
+  fill: var(--brand-color);
+}
+
+.svg-icon-twitt {
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 3px;
+}
+
+.svg-icon-twitt:hover {
+  stroke: var(--brand-color);
+}
+
+.svg-icon-twitt:focus {
+  stroke: var(--brand-color);
+}
+
+.footer-navbar {
+  display: flex;
+  margin-top: 32px;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.navbar-link {
+  color: var(--primary-color);
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114.286%;
+  letter-spacing: -0.28px;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: var(--brand-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+hr {
+  color: transparent;
+  margin-top: 32px;
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  flex-grow: 1;
+}
+
+@media screen and (width >= 768px) {
+  :root {
+    --padding-vertical-global-tablet-desktop: 50px;
+    --padding-horizontal-global-tablet-desktop: 32px;
+  }
+
+  /* .contacts-icons {
+    width: 100%;
+  } */
+  .contacts-global {
+    display: flex;
+  }
+
+  .footer-content {
+    padding: var(--padding-vertical-global-tablet-desktop)
+      var(--padding-horizontal-global-tablet-desktop);
+  }
+
+  .footer-title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.56px;
+    margin: 0;
+    max-width: 300px;
+    margin-right: 124px;
+  }
+
+  .navbar-list {
+    flex-direction: row;
+  }
+
+  hr {
+    margin-top: 50px;
+  }
+
+  .footer-navbar {
+    margin-top: 24px;
+  }
+
+  .svg-icon-twitt {
+    width: 24px;
+    min-height: 24px;
+  }
+
+  .svg-icon-insta {
+    width: 24px;
+    min-height: 24px;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  :root {
+    --padding-vertical-global-tablet-desktop: 50px;
+    --padding-horizontal-global-tablet-desktop: 32px;
+  }
+
+  .footer-title {
+    margin-right: 543px;
+  }
+
+  /* .contacts-icons {
+    width: 100%;
+  } */
+}

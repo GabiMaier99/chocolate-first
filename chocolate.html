@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/chocolate.css">
+    <link rel="stylesheet" href="./css/footer.css">
+  </head>
+  <body>
+    <section class="chocolate-first">
+  <div class="container chocolate-section">
+    <h1 class="chocolate-title">
+      EXPLORE OUR NEW <br />
+      CHOCOLATE FIRST
+    </h1>
+    <p class="chocolate-about">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button type="submit" class="chocolate-button" data-modal-open>
+      Subscribe
+    </button>
+  </div>
+</section>
+
+<div data-modal class="modal-container is-hidden">
+  <div class="modal">
+    <div class="image-popup"></div>
+    <div class="info-popup">
+      <h2 class="popup-title">Explore our<br><span class="popup-title-continue">new chocolate</span> first!</h2>
+      <form class="form-class" >
+         <input class="modal-label" placeholder="Enter your email" type="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" >
+         <button type="submit" class="subscribe-button" >Subscribe</button>
+      </form>
+    </div>
+      <button type="button" class="modal-button" data-modal-close>
+        <svg  class="x-button-modal">
+          <use
+            href="./images/icons.svg#close-new"
+            class="modal-close-button"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+    <footer class="footer-content">
+      <div class="contacts-global">
+        <!-- <div class="footer-container"> -->
+        <h2 class="footer-title">
+          <span class="footer-title-color">Chocolate</span> a delicious cure for
+          a bad day
+        </h2>
+        <!-- </div> -->
+
+        <div class="contacts-icons">
+          <div class="contacts">
+            <p class="contacts-title">Contact us</p>
+            <address>
+              <ul class="footer-contact">
+                <li>
+                  <a href="tel:+380684439426" class="contact-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:simplychoc@gmail.com" class="contact-link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icons">
+            <ul class="list-icons">
+              <li class="lists-icons">
+                <a href="">
+                  <svg width="22" height="22" class="svg-icon-insta">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="lists-icons">
+                <a href="">
+                  <svg width="22" height="22" class="svg-icon-twitt">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <nav class="footer-navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="" class="navbar-link">How it's made?</a>
+          </li>
+          <li>
+            <a href="" class="navbar-link">Our products</a>
+          </li>
+          <li>
+            <a href="" class="navbar-link">Top sellers</a>
+          </li>
+          <li>
+            <a href="" class="navbar-link">Chocolate is love</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+ <script src="./js/index.js"></script>
+  </body>
+</html>
